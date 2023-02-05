@@ -1,0 +1,126 @@
+--------------------------------------------------------------------------------
+JobId          : X299-0-63d65d37
+Name           : md0_crop4_acyl
+Program        : SiteMap
+Version        : 2021-4 build 135
+Host           : X299
+Dir            : /mnt/3a29b482-dac1-4563-be89-d63ad92354e9/cers_modelling/md_sampling_cers_models/charmm_gui_systems/cers2_10pc_chol/sitemaps
+HostEntry      : localhost
+JobHost        : X299
+JobDir         : /scratch/tamir/md0_crop4_acyl
+JobSchrodinger : /opt/schrodinger2021-4
+Commandline    : /opt/schrodinger2021-4/sitemap md0_crop4_acyl.in
+StartTime      : 2023-01-29-13:49:11
+--------------------------------------------------------------------------------
+
+== Begin input keywords ==
+ADDPHIL  -8.0
+ADDPHOB  -0.5
+ADDSP  True
+COMPRESS  True
+CUTOFF  20.0
+D2THRESH  3.1
+DTHRESH  6.5
+DVSCALE  2.5
+ENCLOSURE  0.5
+EXTEND  3
+FAKE  False
+FFIELD  OPLS_2005
+GRID  0.7
+KEEPELEC  False
+KEEPVDW  False
+KEEPVOLPTS  True
+KMAX  3
+KMAX2  5
+MAPDIST  4.0
+MARGIN  6.0
+MAXDIST  8.0
+MAXSITES  1
+MAXVDW  1.1
+MINGROUP  3
+MODCHARGES  True
+MODPHOBIC  3
+NEARRES  3.5
+NTHRESH  3
+PROT  md0_crop4.mae
+R2THRESH  4.1
+REPORTSIZE  10
+ROUND  False
+RTHRESH  5.0
+VERBOSITY  0
+WRITEGRIDS  False
+WRITEPOT  False
+WRITESTRUCTS  True
+WRITEVIS  True
+XCENT  62.477335929870605
+XRANGE  10.0
+YCENT  53.18899631500244
+YRANGE  10.0
+ZCENT  54.17900085449219
+ZRANGE  10.0
+== End input keywords ==
+
+== Begin single-receptor SiteMap calculation ==
+
+-- Begin site search --
+ Parameters for this calculation:
+ sitecut =  0.500000000000000     
+ sitescmin =   1.10000000000000     
+ afactor =   1.00000000000000     
+ bfactor =   1.00000000000000     
+ imaxsite =           8
+ ithresh =           3
+ mingroup =           3
+ kmax =           3
+ kmax2 =           5
+ r2thresh =   4.10000000000000     
+ dvscale =   2.50000000000000     
+ dvscnorm =   2.50000000000000     
+ dvscbig =   2.50000000000000     
+ border =   2.00000000000000     
+ dthresh =   6.50000000000000     
+ rthresh =   5.00000000000000     
+ maxgroup =         100
+ r2thresh =   4.10000000000000     
+ nthresh =           3
+ ndir =         110
+ use_vdw = T
+ repname = none
+ repsize =          10
+ maxrep =           1
+ sitelis = sites.lis
+ profile = none
+ sitelig = none
+ siteasl = none
+ use_sitelig =  F
+ sitebox =  -999.000000000000     
+ writepdb =  F
+ number of protein atoms =        5675
+Starting findsites:  Sunday, January 29 2023, at 13:49:14 IST
+ptypes obtained:  Sunday, January 29 2023, at 13:49:14 IST
+lj parameters obtained:  Sunday, January 29 2023, at 13:49:14 IST
+Basic parameters obtained:  Sunday, January 29 2023, at 13:49:14 IST
+Receptor parameterization completed:  Sunday, January 29 2023, at 13:49:14 IST
+ scaled value of sitecut =   55.0000000000000     
+ sphere directions set up         110
+Sunday, January 29 2023, at 13:49:14 IST
+ FINDSITE will use user-specified box
+Centroid of box:  62.477  53.189  54.179
+ boundaries   57.4773359298706        67.4773359298706     
+   48.1889963150024        58.1889963150024        49.1790008544922     
+   59.1790008544922     
+ box          10          10          10
+ maximum number of atoms in a sitebox =           6
+Site points found:  Sunday, January 29 2023, at 13:49:14 IST
+ boxes, patoms in boxes, empty boxes =         125         312          17
+ total, outside sites =        1000          13
+Site points pruned:  Sunday, January 29 2023, at 13:49:14 IST
+final goodsites =         0
+SITEMAP FATAL ERROR: No sites in protein box are suitable for docking.
+
+Current time: Sun Jan 29 13:49:14 2023
+Elapsed time: 0:00:02.69
+SiteMap failed.
+
+No sites in protein box are suitable for docking.
+

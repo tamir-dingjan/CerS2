@@ -1,0 +1,294 @@
+--------------------------------------------------------------------------------
+JobId          : X299-0-63cd0ac7
+Name           : md0_crop170_sph
+Program        : SiteMap
+Version        : 2021-4 build 135
+Host           : X299
+Dir            : /mnt/3a29b482-dac1-4563-be89-d63ad92354e9/cers_modelling/md_sampling_cers_models/charmm_gui_systems/cers2_10pc_chol/sitemaps
+HostEntry      : localhost
+JobHost        : X299
+JobDir         : /scratch/tamir/md0_crop170_sph
+JobSchrodinger : /opt/schrodinger2021-4
+Commandline    : /opt/schrodinger2021-4/sitemap md0_crop170_sph.in -WAIT
+StartTime      : 2023-01-22-12:07:04
+--------------------------------------------------------------------------------
+
+== Begin input keywords ==
+ADDPHIL  -8.0
+ADDPHOB  -0.5
+ADDSP  True
+COMPRESS  True
+CUTOFF  20.0
+D2THRESH  3.1
+DTHRESH  6.5
+DVSCALE  2.5
+ENCLOSURE  0.5
+EXTEND  3
+FAKE  False
+FFIELD  OPLS_2005
+GRID  0.7
+KEEPELEC  False
+KEEPVDW  False
+KEEPVOLPTS  True
+KMAX  3
+KMAX2  5
+MAPDIST  4.0
+MARGIN  6.0
+MAXDIST  8.0
+MAXSITES  1
+MAXVDW  1.1
+MINGROUP  3
+MODCHARGES  True
+MODPHOBIC  3
+NEARRES  3.5
+NTHRESH  3
+PROT  md0_crop170.mae
+R2THRESH  4.1
+REPORTSIZE  10
+ROUND  False
+RTHRESH  5.0
+VERBOSITY  0
+WRITEGRIDS  False
+WRITEPOT  False
+WRITESTRUCTS  True
+WRITEVIS  True
+XCENT  48.37399959564209
+XRANGE  10.0
+YCENT  41.33399963378906
+YRANGE  10.0
+ZCENT  60.93899726867676
+ZRANGE  10.0
+== End input keywords ==
+
+== Begin single-receptor SiteMap calculation ==
+
+-- Begin site search --
+ Parameters for this calculation:
+ sitecut =  0.500000000000000     
+ sitescmin =   1.10000000000000     
+ afactor =   1.00000000000000     
+ bfactor =   1.00000000000000     
+ imaxsite =           8
+ ithresh =           3
+ mingroup =           3
+ kmax =           3
+ kmax2 =           5
+ r2thresh =   4.10000000000000     
+ dvscale =   2.50000000000000     
+ dvscnorm =   2.50000000000000     
+ dvscbig =   2.50000000000000     
+ border =   2.00000000000000     
+ dthresh =   6.50000000000000     
+ rthresh =   5.00000000000000     
+ maxgroup =         100
+ r2thresh =   4.10000000000000     
+ nthresh =           3
+ ndir =         110
+ use_vdw = T
+ repname = none
+ repsize =          10
+ maxrep =           1
+ sitelis = sites.lis
+ profile = none
+ sitelig = none
+ siteasl = none
+ use_sitelig =  F
+ sitebox =  -999.000000000000     
+ writepdb =  F
+ number of protein atoms =        5676
+Starting findsites:  Sunday, January 22 2023, at 12:07:07 IST
+ptypes obtained:  Sunday, January 22 2023, at 12:07:07 IST
+lj parameters obtained:  Sunday, January 22 2023, at 12:07:07 IST
+Basic parameters obtained:  Sunday, January 22 2023, at 12:07:07 IST
+Receptor parameterization completed:  Sunday, January 22 2023, at 12:07:07 IST
+ scaled value of sitecut =   55.0000000000000     
+ sphere directions set up         110
+Sunday, January 22 2023, at 12:07:07 IST
+ FINDSITE will use user-specified box
+Centroid of box:  48.374  41.334  60.939
+ boundaries   43.3739995956421        53.3739995956421     
+   36.3339996337891        46.3339996337891        55.9389972686768     
+   65.9389972686768     
+ box          10          10          10
+ maximum number of atoms in a sitebox =           6
+Site points found:  Sunday, January 22 2023, at 12:07:07 IST
+ boxes, patoms in boxes, empty boxes =         125         224          43
+ total, outside sites =        1000         178
+Site points pruned:  Sunday, January 22 2023, at 12:07:07 IST
+final goodsites =        10
+         3 sites will be removed
+         7 good sites remain
+Number of site groups found =     1
+
+  Group  index  size  score     x       y       z     stdev
+    1      1      7    1.61   49.58   40.79   60.22    1.20
+Sites linked and merged:  Sunday, January 22 2023, at 12:07:07 IST
+ Storing receptor data
+
+Site-finding complete.
+Number of sites to map/eval:  1
+
+-- Mapping site  1 --
+jobname: md0_crop170_sph_site_1
+all SiteMap grid files will be generated
+ philic map specified
+ phobic map specified
+ donor map specified
+ acceptor map specified
+ metal-ligation map specified
+ surface-display map specified
+grid margin:     6.00
+grid spacing:     0.70
+non-bonded cutoff:    20.00
+ligand/sitepoints file: 
+protein coordinates/parameters file: 
+output map/grid files will be written to the current directory
+vis files will be written
+protein charges will be modified to reduce formal charges and adjust donor/acceptor potentials
+protein radii will be modified to allow closer approach to donor and acceptor heteroatoms
+phobic areas will be modified to emphasize enclosed regions and to deemphasize exposed regions using alternative method
+all input instructions read
+ Getting site data
+ligand xcm,ycm,zcm,xrange,yrange,zrange 49.874 40.834 60.439  3.000  1.000  1.000
+
+ Reusing receptor data from site-finding stage.
+
+Sitemap: electrostatic+vdw interaction energy
+Map field of *enzyme* in region of *inhibitor*
+
+computing site maps ...
+grid lim (orig)  42.374  57.374  34.334  47.334  53.939  66.939
+grid lim (adj)   42.174  57.574  34.184  47.484  53.789  67.089
+grid point counts   23   20   20
+total grid points    9200
+
+ 5676 receptor atoms read
+grid: adjdip
+number of grid points within emin, emax limits =     8357
+ maximum grid value before cutoff =               -0.014
+ minimum grid value before cutoff =   -470.713
+
+philic and phobic grids formed
+grid: surf
+number of grid points within emin, emax limits =     1922
+ maximum grid value before cutoff =         37943874.336
+ minimum grid value before cutoff =     -2.655
+
+grid: phil
+number of grid points within emin, emax limits =     2679
+ maximum grid value before cutoff =         37943824.336
+ minimum grid value before cutoff =    -16.545
+
+grid: phob
+number of grid points within emin, emax limits =     1888
+ maximum grid value before cutoff =         37943889.336
+ minimum grid value before cutoff =     -2.217
+
+mod_phobic: phobthresh, philthresh =  -0.250  -3.000
+ maximum number of atoms in a sitebox =           8
+ boxes, patoms in boxes, empty boxes =       12369        5676       10274
+Average phobic potential changed from  -0.868 to  -0.523 for  730 grid points
+
+number of phobic points =  1415   average phobic score =   0.68
+number of philic points =  1264   average philic score =  -3.47
+
+number of qualifying surf grid points =      380
+
+number of qualifying phil grid points =      120
+
+number of qualifying phob grid points =      151
+
+number of qualifying accptr grid points =       16
+
+number of qualifying donor grid points =       95
+
+number of qualifying metal grid points =        0
+
+visgrd volume surf                                                                            
+visgrd author sitemap                                                                         
+visgrd property name surf                                                                            
+visgrd qualifying points   2431
+visgrd default map values       1       1.00      2
+visgrd number of dims    3
+visgrd dimensions         23        20        20
+visgrd axis scales      0.700     0.700     0.700
+
+visgrd volume hydrophil                                                                       
+visgrd author sitemap                                                                         
+visgrd property name phil                                                                            
+visgrd qualifying points    120
+visgrd default map values       1      -8.00     10
+visgrd number of dims    3
+visgrd dimensions         23        20        20
+visgrd axis scales      0.700     0.700     0.700
+
+visgrd volume hydrophob                                                                       
+visgrd author sitemap                                                                         
+visgrd property name phob                                                                            
+visgrd qualifying points    339
+visgrd default map values       1      -0.50     13
+visgrd number of dims    3
+visgrd dimensions         23        20        20
+visgrd axis scales      0.700     0.700     0.700
+
+visgrd volume hbacceptor                                                                      
+visgrd author sitemap                                                                         
+visgrd property name accptr                                                                          
+visgrd qualifying points     16
+visgrd default map values       1      -8.00     16
+visgrd number of dims    3
+visgrd dimensions         23        20        20
+visgrd axis scales      0.700     0.700     0.700
+
+visgrd volume hbdonor                                                                         
+visgrd author sitemap                                                                         
+visgrd property name donor                                                                           
+visgrd qualifying points     95
+visgrd default map values       1      -8.00      5
+visgrd number of dims    3
+visgrd dimensions         23        20        20
+visgrd axis scales      0.700     0.700     0.700
+
+-- Evaluating site  1 --
+Ligand/site-points file: 
+Protein coordinates/parameters file: 
+extend =   3
+ Verbosity flags: F F F F F
+all SiteMap grid files will be read
+the protein charges will be modified to reduce formal charges and adjust donor/acceptor potentials
+protein radii will be modified to allow closer approach to donor and acceptor heteroatoms
+phobic areas emphasize enclosed regions and deemphasize exposed regions using alternative method
+site-point set will be augmented by including significant nearby points
+  threshold for adding phobic points:  -0.500
+  threshold for adding philic points:  -8.000
+base name for SiteMap grid files: 
+ Reusing grid data
+reusing site data
+Number of protein atoms:    5676
+ 
+phobic grid file reshaped
+philic grid file reshaped
+donor grid file reshaped
+acceptor grid file reshaped
+metal grid file reshaped
+surf grid file reshaped
+ maximum number of atoms in a sitebox =           8
+
+
+Number of site points    7  first shell   15  higher shells   36   dirscore   0.826
+1 vdw  -1.425   phob  -0.768   phil  -1.450   donor  -1.396   acceptor  -0.054   metal   0.000
+2               phob  -0.394   phil  -1.376   donor  -0.019   acceptor  -1.357   metal   0.000
+
+SiteScore size   Dscore  volume  exposure enclosure contact  phobic   philic   balance  don/acc
+  0.866    28    0.867    83.69    0.646    0.826    1.099    2.739    0.387    7.075   26.026
+
+-- Done with site  1 --
+
+== End SiteMap calculation ==
+
+Wrote 1 sites to "md0_crop170_sph_out.maegz".
+
+Current time: Sun Jan 22 12:07:08 2023
+Elapsed time: 0:00:04.09
+SiteMap successfully completed.
+
